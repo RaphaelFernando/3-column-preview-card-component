@@ -1,0 +1,29 @@
+/* Implementação de fontes*/
+
+@font-face {
+    font-family: LexendDeca;
+    src: url(https://fonts.google.com/specimen/Lexend+Deca);
+}
+
+@font-face {
+    font-family: BigShouldersDisplay;
+    src: url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+}
+
+/* implementação no body*/
+
+body{
+    font-size: 15px;
+    height: 100%;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* Definindo tamanho padrão da pagina*/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/*Implementação nas divs*/
