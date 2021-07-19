@@ -8,4 +8,4 @@ O projeto foi desenvolvido por:
 
 ### Prévia
 
-<img src="design/desktop-preview.jpg" alt="">
+<img src="design/desktop-design.jpg" alt="">
