@@ -1,13 +1,15 @@
 /* Implementação de fontes*/
 
-@font-face {
-    font-family: LexendDeca;
-    src: url(https://fonts.google.com/specimen/Lexend+Deca);
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+h2{
+    font-family: 'Lexend Deca', sans-serif;
 }
 
-@font-face {
-    font-family: BigShouldersDisplay;
-    src: url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+p{
+    font-family: 'Big Shoulders Display', cursive;
 }
 
 /* implementação no body*/
@@ -15,7 +17,6 @@
 body{
     font-size: 15px;
     height: 100%;
-    display: flex;
     background-color: hsl(0, 0%, 100%);
 }
 
@@ -27,3 +28,42 @@ html, body {
 }
 
 /*Implementação nas divs*/
+
+.wraper{
+    display: inline-block;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.Sedans{
+    background-color: hsl(31, 77%, 52%);
+    float: left;
+    margin: auto;
+    width: 20%;
+    height: 20%;
+    flex-shrink: 0;
+}
+
+.SUVs{
+    background-color: hsl(184, 100%, 22%);
+    float: left;
+    margin: auto;
+    width: 20%;
+    height: 20%;
+    flex-shrink: 0;
+}
+
+.Luxury{
+    background-color: hsl(179, 100%, 13%);
+    float: left;
+    margin: auto;
+    width: 20%;
+    height: 20%;
+    flex-shrink: 0;
+}
+
+/*roda Pé*/
+
+.attribution{
+clear: both;
+}
