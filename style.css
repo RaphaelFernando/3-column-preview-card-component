@@ -4,13 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
-h2{
-    font-family: 'Lexend Deca', sans-serif;
-}
-
-p{
-    font-family: 'Big Shoulders Display', cursive;
-}
 
 /* implementação no body*/
 
@@ -22,48 +15,147 @@ body{
 
 /* Definindo tamanho padrão da pagina*/
 html, body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
-/*Implementação nas divs*/
-
-.wraper{
-    display: inline-block;
-    flex-flow: column;
-    justify-content: space-between;
+.wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 25px 25px;
+    background-color: #f2f2f2;
 }
 
-.Sedans{
+.wrapper .card{
+    margin: 40px;
+}
+
+.wrapper h2{
+    padding: 15px 0 25px 0;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', 'cursive';
+    font-size: 2rem;
+    color: #f2f2f2;
+}
+
+.wrapper p {
+    padding-bottom: 40px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.wrapper button {
+    padding: 10px 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 1px solid #f2f2f2;
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.wrapper button a {
+    text-decoration: none;
+    font-size: 1rem;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+
+.wrapper .Sedans {
     background-color: hsl(31, 77%, 52%);
-    float: left;
-    margin: auto;
-    width: 20%;
-    height: 20%;
-    flex-shrink: 0;
+    border-radius: 15px 15px 0 0;
 }
 
-.SUVs{
+.wrapper .Sedans a {
+    color: hsl(31, 77%, 52%);
+}
+
+.wrapper .btn1:hover {
+    background-color: #e38826;
+  }
+  
+  .wrapper .btn1:hover a {
+    color: #f2f2f2;
+  }
+  
+  .wrapper .SUVS {
     background-color: hsl(184, 100%, 22%);
-    float: left;
-    margin: auto;
-    width: 20%;
-    height: 20%;
-    flex-shrink: 0;
-}
-
-.Luxury{
+  }
+  
+  .wrapper .SUVS a {
+    color: hsl(184, 100%, 22%);
+  }
+  
+  .wrapper .SUVS .btn2:hover {
+    background-color: hsl(184, 100%, 22%);
+  }
+  
+  .wrapper .SUVS .btn2:hover a {
+    color: #f2f2f2;
+  }
+  
+  .wrapper .Luxury {
     background-color: hsl(179, 100%, 13%);
-    float: left;
-    margin: auto;
-    width: 20%;
-    height: 20%;
-    flex-shrink: 0;
-}
-
-/*roda Pé*/
-
-.attribution{
-clear: both;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  .wrapper .Luxury a {
+    color: hsl(179, 100%, 13%);
+  }
+  
+  .wrapper .Luxury .btn3:hover {
+    background-color: hsl(179, 100%, 13%);
+  }
+  
+  .wrapper .Luxury .btn3:hover a {
+    color: #f2f2f2;
+  }
+  
+  @media (min-width: 992px) {
+    .wrapper {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 100vh;
+    }
+    .wrapper section {
+      width: 300px;
+    }
+    .wrapper .Sedans {
+      border-radius: 15px 0 0 15px;
+    }
+    .wrapper .Luxury {
+      border-radius: 0 15px 15px 0;
+    }
+    .wrapper h1 {
+      padding-top: 25px;
+    }
+    .wrapper p {
+      padding-bottom: 60px;
+      line-height: 1.7;
+    }
 }
