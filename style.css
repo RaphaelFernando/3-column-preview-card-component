@@ -8,91 +8,91 @@
 /* implementação no body*/
 
 body{
-    font-size: 15px;
-    height: 100%;
-    background-color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
 }
 
 /* Definindo tamanho padrão da pagina*/
 html, body {
-    font-size: 15px;
-    font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 25px 25px;
-    background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 25px 25px;
+  background-color: #f2f2f2;
 }
 
 .wrapper .Card{
-    margin: 40px;
+  margin: 40px;
 }
 
 .wrapper h2{
-    padding: 15px 0 25px 0;
-    text-transform: uppercase;
-    font-family: 'Big Shoulders Display', 'cursive';
-    font-size: 2rem;
-    color: #f2f2f2;
+  padding: 15px 0 25px 0;
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', 'cursive';
+  font-size: 2rem;
+  color: #f2f2f2;
 }
 
 .wrapper p {
-    padding-bottom: 40px;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.75);
+  padding-bottom: 40px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .wrapper button {
-    padding: 10px 20px;
-    font-family: 'Lexend Deca', sans-serif;
-    border: 1px solid #f2f2f2;
-    border-radius: 50px;
-    background-color: #f2f2f2;
-    cursor: pointer;
-    -webkit-transition: background-color 0.3s;
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  font-family: 'Lexend Deca', sans-serif;
+  border: 1px solid #f2f2f2;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .wrapper button a {
-    text-decoration: none;
-    font-size: 1rem;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s;
+  text-decoration: none;
+  font-size: 1rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 
 .wrapper .Sedans {
-    background-color: hsl(31, 77%, 52%);
-    border-radius: 15px 15px 0 0;
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 15px 15px 0 0;
 }
 
 .wrapper .Sedans a {
-    color: hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
 }
 
 .wrapper .btn1:hover {
-    background-color: #e38826;
+  background-color: #e38826;
   }
   
   .wrapper .btn1:hover a {
-    color: #f2f2f2;
+  color: #f2f2f2;
   }
   
   .wrapper .SUVS {
@@ -130,17 +130,17 @@ html, body {
   
   @media (min-width: 992px) {
     .wrapper {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      height: 100vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
     }
     .wrapper section {
       width: 300px;
